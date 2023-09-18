@@ -1,5 +1,12 @@
+:root{
+  --purplr : #eff7ff;
+  --s : #ebfff8;
+  --sa :#f2efff;
+}
+
 body {
   margin: 0;
+  margin-top: 65px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +17,258 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.navbar {
+  /* background-color: #333; */
+  background: linear-gradient(to right , #67977e , #559fab);
+  color: #fff;
+  padding: 10px 0px;
+  position: fixed;
+  width: 100vw;
+  height: 45px;
+  top: 0px;
+  left: 0px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  padding-left: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+}
+h1 {
+  margin-left: 9px;
+}
+p{
+  font: 1em sans-serif;
+}
+a > li{
+  font: .8em sans-serif;
+  list-style-type: circle;
+  pad: 6px;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.site-footer {
+  margin-top: 20px;
+  padding: 20px;
+  color: #ffffff;
+  font: 300 .8em  sans-serif ;
+  background: linear-gradient(to right , #67977e , #559fab);
+
+}
+hr{
+  color: white;
+}
+.heder-title {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #016783;
+}
+/* homepage design */
+.contents{
+  display: flex;
+}
+/* footer design */
+.social-icons{
+  display: flex;
+  justify-content: flex-start;
+}
+.copy-rights {
+  text-align: center;
+}
+/* services design */
+.align-goal{
+  width: 50%;
+  text-align: center
+}
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+.grid-items{
+  padding-left: 20px;
+  margin: 0px 20px 20px 9px;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background-color: #e7f6f2;
+}
+.grid-items > p {
+  margin-left: 20px;
+}
+/* comapny goal */
+
+.flex-container {
+  display: flex;
+  padding: 50px;
+  color: white;
+  /* background-color: #dff8ff; */
+  background: linear-gradient(to right , #67977e , #559fab);
+}
+.flex-content{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+}
+h1.title{
+  font-size: 3rem;
+}
+.body-header{
+  margin-top: 90px;
+}
+/* p.body{
+width: 20vw;
+} */
+.flex-image-container{
+  flex: 1;
+}
+/* mission design */
+.mission-container{
+  display: flex;
+}
+.mission-image-container{
+  width: 47vw;
+  flex: 1;
+}
+.mission-image-container > img{
+  object-fit: contain;
+  max-width: 100%;
+}
+.mission-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 30px;
+  background-color: #e7f6f2;
+}
+.mission-content > p{
+  font: italic 900 2.3em "Montserrat";
+}
+/* vision style */
+.vision-header{
+  margin-right: "25%";
+  text-align: center;
+}
+/* social pages */
+.social-container{
+  display: flex;
+  margin: 20px 14px;
+}
+.social-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 14px;
+}
+.social-img-container{
+  width: 25px;
+  height: 25px;
+}
+section:not(:first-child){
+  margin-top: 35px;
+}
+/*  */
+.container-design{
+  background-color: rgba(42, 197, 132, 0.281);
+}
+.image-container{
+  width: 50px;
+  height: 50px;
+}.image{
+  object-fit: contain;
+  max-width: 100%;
+}
+/* Media query for mobile */
+@media screen and (max-width: 768px) {
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      text-align: center;
+      width: 98%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #333;
+      z-index: 1;
+  }
+  .only-web{
+    display: none;
+  }
+  .nav-links > li  {
+    /* color:  red; */
+    padding: 20px;
+  }
+
+  .nav-links.active {
+      display: flex;
+  }
+
+  .burger-menu {
+      display: flex;
+      flex-direction: column;
+  }
+  /*  */
+  .mission-container{
+    flex-direction: column;
+  }
+  .mission-image-container{
+    display: none;
+  }
+  /*  */
+  .align-goal{
+    width: 100%;
+    text-align: center
+  }
+  /*  */
+  .vision-header{
+    text-align: center;
+  }
 }

@@ -10,6 +10,8 @@
 
 # production
 /build
+**.png
+**.jpg
 
 # misc
 .DS_Store
@@ -18,6 +20,10 @@
 .env.test.local
 .env.production.local
 
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+src/App.test.js
+src/App.css
