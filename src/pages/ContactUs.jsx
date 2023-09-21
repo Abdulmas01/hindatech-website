@@ -1,9 +1,9 @@
 import facebook from "../images/facebook.png";
 import email from "../images/email.png";
-import twitter from "../images/user-interface.png";
 import whatapp from "../images/whatsapp.png";
 import ticktok from "../images/tik-tok.png";
-import ServicesContainer from '../components/ServicesContainer'
+import twitter from "../images/twitter.png";
+import ContactUsContainer from "../components/ContactUsContainer";
 
 const ContactUs = () => {
     class Social {
@@ -20,9 +20,9 @@ const ContactUs = () => {
     const listSocial = [
         new Social("Email", email, "hindatech01@gmail.com", "mailto:hindatech01@gmail.com"),
         new Social("Facebook", facebook, "http://facebook.com/hindatech"),
-        new Social("ticktok", ticktok, ""),
-        new Social("WhatsApp", whatapp, ""),
-        // new Social("Twitter", twitter, ""),
+        new Social("ticktok", ticktok, "http://tictok.com/@hindatech"),
+        new Social("WhatsApp", whatapp, "+2347026065634"),
+        new Social("Twitter", twitter, "http://twitter.com/hindatech"),
     ]
     return (
         <main>
@@ -31,8 +31,8 @@ const ContactUs = () => {
             </h1>
             {
                 listSocial.map((value, index) => {
-                    return <a key={index} href={value.socialLink}>
-                        <ServicesContainer image={value.image} text={value.name} />
+                    return <a key={index} href={value.socialLink} target="_blank" rel="noreferrer">
+                        <ContactUsContainer image={value.image} text={value.name} link={value.socialLink} />
                     </a>
                 })
             }

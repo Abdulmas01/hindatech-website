@@ -7,8 +7,22 @@ const DownloadContainer = ({ image, name, filesize, dowloadlink }) => {
                 <div className="image-container">
                     <img className='image' src={image} alt="" />
                 </div>
-                <p >{name}</p>
-                <p >{filesize}</p>
+                <div style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "flex-start",
+                    width: "50%"
+                }}>
+                    <p style={{
+                        margin: 0,
+                        marginLeft: "20px"
+                    }} >Android Version: {name}</p>
+                    <p style={{
+                        margin: 0,
+                        marginLeft: "20px",
+                        marginTop: "9px"
+                    }} >File Size :  {filesize}</p>
+                </div>
             </div>
         </a>
     )

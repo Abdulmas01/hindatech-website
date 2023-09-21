@@ -30,7 +30,7 @@ code {
   left: 0px;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
 }
 .container {
   display: flex;
@@ -74,7 +74,7 @@ h1 {
   margin-left: 9px;
 }
 p{
-  font: 1em sans-serif;
+  font: 1em "Montserrat";
 }
 a > li{
   font: .8em sans-serif;
@@ -157,7 +157,7 @@ hr{
   /* text-align: center; */
 }
 h1.title{
-  font-size: 3rem;
+  font-size: 3.2rem;
 }
 .body-header{
   margin-top: 90px;
@@ -226,6 +226,15 @@ section:not(:first-child){
   object-fit: contain;
   max-width: 100%;
 }
+.buitify{
+  margin-left: 20px;
+}
+.buitify > p{
+  margin-left: 20px;
+}
+/* q{
+  font: 800 3.2rem "Poppins";
+} */
 /* Media query for mobile */
 @media screen and (max-width: 768px) {
   .nav-links {
@@ -269,6 +278,9 @@ section:not(:first-child){
   }
   /*  */
   .vision-header{
+    text-align: center;
+  }
+  .align-center{
     text-align: center;
   }
 }

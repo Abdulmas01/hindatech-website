@@ -9,6 +9,8 @@ import help from "../images/helping.png";
 import app from "../images/user-interface.png";
 import ServicesContainer from '../components/ServicesContainer';
 import SocialPages from '../extentions/SocialPages';
+import webdev from "../images/webdev.png";
+import animation from "../images/animation.png";
 
 const Homepage = () => {
   return (
@@ -18,7 +20,7 @@ const Homepage = () => {
           <div className="flex-container">
             <div className='flex-content'>
               <h1 className='title'>Improving The World Through Tech</h1>
-              <p className="body">
+              <p >
                 Creating Tech Based Inovations In Nigeria, By Creating Hardwares And Software That Aid In day To Day Life
               </p>
             </div>
@@ -32,14 +34,14 @@ const Homepage = () => {
         <section>
           <h1 style={{
             marginLeft: "20px"
-          }} className='vision-header'>Our Services</h1>
+          }} className='align-centervision-header'>Our Services</h1>
           <div className="grid-container">
             <ServicesContainer image={app} text={"App Development"} />
-            <ServicesContainer image={school} text={"Web Development"} />
+            <ServicesContainer image={webdev} text={"Web Development"} />
             <ServicesContainer image={networking} text={"Networking"} />
             <ServicesContainer image={ux} text={"Ui/Ux Design"} />
             <ServicesContainer image={school} text={"School Management"} />
-            <ServicesContainer image={app} text={"Modelling And Animation"} />
+            <ServicesContainer image={animation} text={"Modelling And Animation"} />
           </div>
         </section>
 
@@ -79,7 +81,7 @@ const Homepage = () => {
               marginTop: "60px",
               marginLeft: "20px"
             }}
-            className='vision-header'
+            className='align-center'
           >
             Contact Us
           </h1>
