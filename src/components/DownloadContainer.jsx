@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 const DownloadContainer = ({ image, name, filesize, dowloadlink }) => {
     return (
@@ -11,7 +11,7 @@ const DownloadContainer = ({ image, name, filesize, dowloadlink }) => {
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "flex-start",
-                    width: "50%"
+
                 }}>
                     <p style={{
                         margin: 0,

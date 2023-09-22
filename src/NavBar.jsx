@@ -6,6 +6,9 @@ const Nav = () => {
     function setActive(index) {
         setIsActive({ showDialog: !IsActive.showDialog, currentpage: index });
     }
+    function closeDialog() {
+        setIsActive({ ...IsActive, showDialog: !IsActive.showDialog })
+    }
     function ContactUs() {
         if (window.location.pathname !== "/") {
             navigator("/contactUs");
@@ -16,17 +19,17 @@ const Nav = () => {
 
     return (
         <nav className="navbar">
-            <div className="container">
+            <div className="nav-container">
                 <div className="logo">
                     HindaTech
                 </div>
                 <ul className={`nav-links ${IsActive.showDialog && 'active'}`}>
-                    <li onClick={() => setActive(0)}><NavLink to={"/"} >Home</NavLink></li>
-                    <li onClick={() => setActive(1)}><NavLink to={"/download"}>Apps</NavLink></li>
-                    <li onClick={() => setActive(2)}><NavLink to={"/services"}>Services</NavLink></li>
-                    <li onClick={() => ContactUs()}><NavLink >Contact</NavLink></li>
+                    <li className={`${IsActive.currentpage === 0 && "active-page"}`} onClick={() => setActive(0)}><NavLink to={"/"} >Home</NavLink></li>
+                    <li className={`${IsActive.currentpage === 1 && "active-page"}`} onClick={() => setActive(1)}><NavLink to={"/download"}>Apps</NavLink></li>
+                    <li className={`${IsActive.currentpage === 2 && "active-page"}`} onClick={() => setActive(2)}><NavLink to={"/services"}>Services</NavLink></li>
+                    <li className={`${IsActive.currentpage === 3 && "active-page"}`} onClick={() => ContactUs()}><NavLink >Contact</NavLink></li>
                 </ul>
-                <div onClick={setActive} className="burger-menu">
+                <div onClick={closeDialog} className="burger-menu">
                     <div className="bar"></div>
                     <div className="bar"></div>
                     <div className="bar"></div>

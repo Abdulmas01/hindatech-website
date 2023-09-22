@@ -7,6 +7,8 @@
 body {
   margin: 0;
   margin-top: 65px;
+  scroll-margin: 0;
+  /* scroll-behavior: smooth; */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -17,6 +19,9 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat";
 }
 .navbar {
   /* background-color: #333; */
@@ -29,13 +34,16 @@ code {
   top: 0px;
   left: 0px;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat";
-}
-.container {
+
+.nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.active-page{
+  padding-bottom: 2px;
+  border-bottom: 2px solid white;
+  transition: padding .5s;
 }
 
 .logo {
@@ -50,6 +58,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-links li {
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .nav-links a {
@@ -133,8 +142,9 @@ hr{
   margin: 0px 20px 20px 9px;
   display: flex;
   align-items: center;
-  height: 60px;
+  min-height: 60px;
   background-color: #e7f6f2;
+  max-width: 100%;
 }
 .grid-items > p {
   margin-left: 20px;
@@ -241,10 +251,10 @@ section:not(:first-child){
       display: none;
       flex-direction: column;
       text-align: center;
-      width: 98%;
+      width: 80vw;
       position: absolute;
       top: 60px;
-      left: 0;
+      left: 5vw;
       background-color: #333;
       z-index: 1;
   }
@@ -282,5 +292,8 @@ section:not(:first-child){
   }
   .align-center{
     text-align: center;
+  }
+  .grid-items{
+    max-width: 90vw;
   }
 }
