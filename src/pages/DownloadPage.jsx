@@ -11,7 +11,7 @@ const DownloadPage = () => {
   const downloadLinks = [
     {
       androidVersion: "Searchit",
-      downloadLink: "https://drive.google.com/uc?export=download&id=1DTrctWDw-rMdfVOmAK0clp72v5YyC86P",
+      downloadLink: "https://storage.googleapis.com/staging.stellar-fin-396612.appspot.com/searchit.apk",
       fileSize: "35mb"
     },
 
