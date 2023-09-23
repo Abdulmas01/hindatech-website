@@ -20,7 +20,6 @@ const DownloadPage = () => {
   return (
     <>
       <h1>Android</h1>
-      <p>click to download</p>
       {downloadLinks.map((value, index) => {
         return <DownloadContainer key={index} dowloadlink={value.downloadLink} name={value.androidVersion} image={searchit} filesize={value.fileSize} />
       })}
