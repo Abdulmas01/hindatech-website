@@ -11,7 +11,7 @@ const DownloadPage = () => {
   const downloadLinks = [
     {
       androidVersion: "Searchit",
-      downloadLink: "https://drive.google.com/file/d/1DTrctWDw-rMdfVOmAK0clp72v5YyC86P/view?usp=drive_link",
+      downloadLink: "https://drive.google.com/uc?export=download&id=1DTrctWDw-rMdfVOmAK0clp72v5YyC86P",
       fileSize: "35mb"
     },
 
