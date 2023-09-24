@@ -16,7 +16,7 @@ const DownloadContainer = ({ image, name, filesize, dowloadlink }) => {
                     <p style={{
                         margin: 0,
                         marginLeft: "20px"
-                    }} >Android Version: {name}</p>
+                    }} >Name: {name}</p>
                     <p style={{
                         margin: 0,
                         marginLeft: "20px",
