@@ -10,19 +10,21 @@ const ContactUs = () => {
         name;
         image;
         socialLink;
-        constructor(name, image, socialLink) {
+        socialValue;
+        constructor(name, image, socialLink, socialValue) {
             this.name = name;
             this.image = image;
             this.socialLink = socialLink;
+            this.socialValue = socialValue
 
         }
     }
     const listSocial = [
-        new Social("Email", email, "hindatech01@gmail.com", "mailto:hindatech01@gmail.com"),
-        new Social("Facebook", facebook, "http://facebook.com/hindatech"),
-        new Social("ticktok", ticktok, "http://tictok.com/@hindatech"),
-        new Social("WhatsApp", whatapp, "+2347026065634"),
-        new Social("Twitter", twitter, "http://twitter.com/hindatech"),
+        new Social("Email", email, "hindatech01@gmail.com", "mailto:=hindatech01@gmail.com"),
+        new Social("Facebook", facebook, "http://facebook.com/hindatech", "http://facebook.com/hindatech"),
+        new Social("ticktok", ticktok, "https://www.tiktok.com/@hindatech", "http://tiktok.com/@hindatech"),
+        new Social("WhatsApp", whatapp, "+2347026065634", "https://wa.me/+2347026065634"),
+        new Social("Twitter", twitter, "http://twitter.com/hindatech", "http://twitter.com/hindatech"),
     ]
     return (
         <main>
@@ -31,7 +33,7 @@ const ContactUs = () => {
             </h1>
             {
                 listSocial.map((value, index) => {
-                    return <a key={index} href={value.socialLink} target="_blank" rel="noreferrer">
+                    return <a key={index} href={value.socialValue} target="_blank" rel="noreferrer">
                         <ContactUsContainer image={value.image} text={value.name} link={value.socialLink} />
                     </a>
                 })
